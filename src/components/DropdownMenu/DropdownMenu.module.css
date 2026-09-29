@@ -1,0 +1,45 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  padding: 6px 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-control);
+  background: #fff;
+  box-shadow: var(--shadow-menu);
+}
+
+.slot {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 14px;
+  border: 0;
+  background: transparent;
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.item:hover {
+  background: var(--color-surface-muted);
+}
+
+.danger {
+  color: var(--color-primary);
+}
+
+.separator {
+  height: 1px;
+  margin: 4px 12px;
+  background: var(--color-divider);
+}

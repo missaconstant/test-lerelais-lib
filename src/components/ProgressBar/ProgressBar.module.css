@@ -1,0 +1,56 @@
+.progress {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.label {
+  font-weight: 600;
+}
+
+.value {
+  font-weight: 700;
+}
+
+.active {
+  color: var(--color-primary);
+}
+
+.done {
+  color: var(--color-success);
+}
+
+.idle {
+  color: var(--color-text-secondary);
+}
+
+.track {
+  height: 8px;
+  width: 100%;
+  border-radius: var(--radius-pill);
+  background: var(--color-surface-sunken);
+  overflow: hidden;
+}
+
+.fill {
+  display: block;
+  height: 100%;
+  border-radius: var(--radius-pill);
+  background: transparent;
+}
+
+.fill.active {
+  background: var(--color-primary);
+}
+
+.fill.done {
+  background: var(--color-success);
+}

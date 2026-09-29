@@ -1,0 +1,83 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 644px;
+  max-width: 100%;
+  padding: 24px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: #fff;
+  box-shadow: var(--shadow-card);
+}
+
+.top,
+.bottom,
+.middle,
+.address,
+.hours {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.top,
+.bottom {
+  justify-content: space-between;
+}
+
+.top h3 {
+  margin: 0 0 4px;
+  font-size: 18px;
+}
+
+.address,
+.hours {
+  color: var(--color-text-secondary);
+  font-size: 13px;
+}
+
+.middle {
+  gap: 16px;
+}
+
+.distance,
+.bottom li {
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.distance {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.line {
+  width: 100%;
+  margin: 0;
+  border: 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.bottom ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bottom button {
+  border: 0;
+  background: transparent;
+  color: var(--color-primary);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}

@@ -1,0 +1,22 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--color-primary);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.link:hover {
+  padding: 4px;
+  background: var(--color-primary-soft);
+  color: var(--color-primary-hover);
+}
+
+.link[aria-disabled='true'] {
+  color: var(--color-disabled);
+  pointer-events: none;
+  text-decoration: none;
+}

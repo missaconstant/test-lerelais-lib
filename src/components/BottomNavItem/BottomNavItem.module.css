@@ -1,0 +1,24 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 78px;
+  height: 64px;
+  border: 0;
+  background: #fff;
+  color: var(--color-text-secondary);
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.item span {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.active {
+  color: var(--color-primary);
+  font-weight: 600;
+}

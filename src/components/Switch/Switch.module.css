@@ -1,0 +1,57 @@
+.control {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.input {
+  position: absolute;
+  opacity: 0;
+  width: 44px;
+  height: 24px;
+  margin: 0;
+}
+
+.track {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  border-radius: 12px;
+  background: #d0d5dd;
+  flex-shrink: 0;
+}
+
+.knob {
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: var(--shadow-knob);
+  transition: left 0.15s ease;
+}
+
+.input:checked + .track {
+  background: var(--color-primary);
+}
+
+.input:checked + .track .knob {
+  left: 21px;
+}
+
+.input:focus-visible + .track {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.input:disabled + .track {
+  opacity: 0.5;
+}
+
+.label {
+  font-size: 13px;
+  color: var(--color-text);
+}

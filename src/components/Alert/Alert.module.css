@@ -1,0 +1,47 @@
+.alert {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 360px;
+  max-width: 100%;
+  padding: 13px 16px;
+  border-radius: var(--radius-md);
+}
+
+.title {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.message {
+  font-size: 11px;
+  color: var(--color-text);
+}
+
+.info {
+  background: var(--color-info-bg);
+}
+.info .title {
+  color: var(--color-info);
+}
+
+.success {
+  background: var(--color-success-bg);
+}
+.success .title {
+  color: var(--color-success);
+}
+
+.warning {
+  background: var(--color-warning-bg);
+}
+.warning .title {
+  color: var(--color-warning);
+}
+
+.error {
+  background: var(--color-error-bg);
+}
+.error .title {
+  color: var(--color-error);
+}

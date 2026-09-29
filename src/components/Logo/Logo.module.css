@@ -1,0 +1,30 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.word {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--color-primary);
+}
+
+.light .word {
+  color: #fff;
+}

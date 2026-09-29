@@ -1,0 +1,22 @@
+.skeleton {
+  display: inline-block;
+  background: var(--color-skeleton);
+}
+
+.text {
+  width: 200px;
+  height: 16px;
+  border-radius: 4px;
+}
+
+.rectangle {
+  width: 200px;
+  height: 80px;
+  border-radius: 8px;
+}
+
+.circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+}

@@ -1,0 +1,57 @@
+.chart {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 320px;
+  height: 200px;
+  padding: 16px;
+  border-radius: var(--radius-control);
+  background: var(--color-surface-muted);
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  gap: 8px;
+  min-height: 0;
+}
+
+.axis {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--color-text-muted);
+  font-size: 9px;
+}
+
+.bars {
+  display: flex;
+  flex: 1;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  height: 100%;
+}
+
+.bar {
+  width: 28px;
+  border-radius: 4px 4px 0 0;
+}
+
+.label {
+  color: var(--color-text-muted);
+  font-size: 10px;
+}
