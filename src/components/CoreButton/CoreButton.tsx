@@ -3,7 +3,7 @@ import mapPin from '@/assets/icons/core-map-pin.svg';
 import { cn } from '@/lib/cn';
 import styles from './CoreButton.module.css';
 
-export type CoreButtonVariant = 'primary' | 'secondary' | 'icon' | 'compact';
+export type CoreButtonVariant = 'primary' | 'secondary' | 'icon' | 'compact' | 'filter';
 
 export interface CoreButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: CoreButtonVariant;

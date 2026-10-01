@@ -1,0 +1,28 @@
+.bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  height: 72px;
+  padding: 0 17px;
+  overflow: hidden;
+  border: 1px solid #e5e8ed;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.input {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  color: #191d26;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  outline: none;
+}
+
+.input::placeholder {
+  color: #606978;
+}

@@ -55,3 +55,17 @@
   color: #d34860;
   font-size: 13px;
 }
+
+.filter {
+  width: 118px;
+  height: 44px;
+  justify-content: flex-start;
+  padding: 0 15px;
+  border: 1px solid #e5e8ed;
+  border-radius: 13px;
+  background: #fff;
+  color: #191d26;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+}

@@ -1,0 +1,57 @@
+.card {
+  width: 100%;
+  max-width: 1098px;
+  padding: 19px;
+  overflow: hidden;
+  border: 1px solid #e5e8ed;
+  border-radius: 18px;
+  background: #fff;
+}
+
+.title {
+  margin: 0 0 21px;
+  color: #191d26;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.header,
+.row {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+
+.header {
+  height: 38px;
+  background: #f9fafc;
+  color: #606978;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.row {
+  height: 46px;
+  background: #fff;
+  color: #606978;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.striped {
+  background: #f9fafc;
+}
+
+.name {
+  color: #191d26;
+  font-weight: 600;
+}

@@ -1,0 +1,29 @@
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  max-width: 1098px;
+  height: 72px;
+  padding: 13px 17px 13px 17px;
+  overflow: hidden;
+  border: 1px solid #e5e8ed;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  color: #191d26;
+  font: inherit;
+  font-size: 12px;
+  outline: none;
+}
+
+.input::placeholder {
+  color: #606978;
+}

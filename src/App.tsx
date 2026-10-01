@@ -16,6 +16,9 @@ import { CoreField } from '@/components/CoreField';
 import { CoreSelect } from '@/components/CoreSelect';
 import { CoreTabs } from '@/components/CoreTabs';
 import { DashboardParcelRow } from '@/components/DashboardParcelRow';
+import { DataFiltersToolbar } from '@/components/DataFiltersToolbar';
+import { DataSearchBar } from '@/components/DataSearchBar';
+import { DataTable } from '@/components/DataTable';
 import { Divider } from '@/components/Divider';
 import { DropdownMenu } from '@/components/DropdownMenu';
 import { EmptyState } from '@/components/EmptyState';
@@ -302,6 +305,7 @@ export function App() {
           <CoreButton variant="secondary">Créer un compte</CoreButton>
           <CoreButton variant="icon">Voir sur la carte</CoreButton>
           <CoreButton variant="compact">Ouvert maintenant</CoreButton>
+          <CoreButton variant="filter">Filtres</CoreButton>
         </div>
         <div className="row">
           <CoreField placeholder="vous@email.fr" />
@@ -347,6 +351,13 @@ export function App() {
           <OutcomeModal />
           <OutcomeModal type="error" />
         </div>
+      </section>
+
+      <section>
+        <h2>Données</h2>
+        <DataFiltersToolbar aria-label="Recherche et filtres" />
+        <DataSearchBar aria-label="Recherche utilisateurs" />
+        <DataTable />
       </section>
 
       <Footer />
