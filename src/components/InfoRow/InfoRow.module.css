@@ -1,0 +1,33 @@
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  max-width: 736px;
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #f7f8fa;
+}
+
+.row p {
+  margin: 0;
+}
+
+.row p:first-child {
+  color: #6b7080;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.row p:last-child {
+  color: #191d26;
+  font-size: 14px;
+  line-height: 20px;
+}

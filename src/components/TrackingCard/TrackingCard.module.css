@@ -1,0 +1,128 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  width: 100%;
+  max-width: 524px;
+  padding: 24px;
+  border: 1px solid #e5e8ed;
+  border-radius: 22px;
+  background: #fff;
+}
+
+.title {
+  margin: 0;
+  color: #191d26;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.number {
+  margin: 0;
+  color: #606978;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.stepItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.done,
+.current,
+.upcoming {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.done,
+.current {
+  background: #d34860;
+  color: #fff;
+}
+
+.upcoming {
+  background: #f9fafc;
+  color: #606978;
+}
+
+.line,
+.lineMuted {
+  width: 58px;
+  height: 3px;
+  border-radius: 2px;
+}
+
+.line {
+  background: #d34860;
+}
+
+.lineMuted {
+  background: #e8eaee;
+}
+
+.route {
+  margin: 0;
+  color: #191d26;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.relay {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+}
+
+.relayIcon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  background: #fdf4f6;
+  color: #d34860;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.relayLabel,
+.relayName {
+  margin: 0;
+  line-height: 1.25;
+}
+
+.relayLabel {
+  color: #606978;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.relayName {
+  margin-top: 4px;
+  color: #191d26;
+  font-size: 15px;
+  font-weight: 600;
+}

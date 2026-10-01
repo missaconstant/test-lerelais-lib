@@ -8,25 +8,42 @@ import { BottomNavItem } from '@/components/BottomNavItem';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { Button } from '@/components/Button';
 import { Checkbox } from '@/components/Checkbox';
+import { ActionCard } from '@/components/ActionCard';
+import { BenefitsCard } from '@/components/BenefitsCard';
 import { ConfirmModal } from '@/components/ConfirmModal';
+import { CoreButton } from '@/components/CoreButton';
+import { CoreField } from '@/components/CoreField';
+import { CoreSelect } from '@/components/CoreSelect';
+import { CoreTabs } from '@/components/CoreTabs';
 import { DashboardParcelRow } from '@/components/DashboardParcelRow';
 import { Divider } from '@/components/Divider';
 import { DropdownMenu } from '@/components/DropdownMenu';
 import { EmptyState } from '@/components/EmptyState';
+import { FaqItem } from '@/components/FaqItem';
 import { FavoriteRelayCard } from '@/components/FavoriteRelayCard';
+import { FeatureCard } from '@/components/FeatureCard';
+import { FilterPill } from '@/components/FilterPill';
 import { FileUpload } from '@/components/FileUpload';
 import { Footer } from '@/components/Footer';
+import { InfoRow } from '@/components/InfoRow';
 import { LinkButton } from '@/components/LinkButton';
+import { LocationCard } from '@/components/LocationCard';
 import { MetricCard } from '@/components/MetricCard';
 import { Navbar } from '@/components/Navbar';
 import { NotificationItem } from '@/components/NotificationItem';
+import { OutcomeModal } from '@/components/OutcomeModal';
 import { NotificationRow } from '@/components/NotificationRow';
 import { Pagination } from '@/components/Pagination';
 import { ParcelCard } from '@/components/ParcelCard';
+import { PhotoUpload } from '@/components/PhotoUpload';
+import { ProcessBadge } from '@/components/ProcessBadge';
 import { ParcelRow } from '@/components/ParcelRow';
 import { ParcelTimeline } from '@/components/ParcelTimeline';
 import { ProgressBar } from '@/components/ProgressBar';
+import { QuestionSearch } from '@/components/QuestionSearch';
 import { QrScanner } from '@/components/QrScanner';
+import { RelayResultCard } from '@/components/RelayResultCard';
+import { ResetPasswordCard } from '@/components/ResetPasswordCard';
 import { QuickActionCard } from '@/components/QuickActionCard';
 import { Radio } from '@/components/Radio';
 import { RelayCard } from '@/components/RelayCard';
@@ -37,6 +54,10 @@ import { Sidebar } from '@/components/Sidebar';
 import { SidebarNavItem } from '@/components/SidebarNavItem';
 import { Skeleton } from '@/components/Skeleton';
 import { StatCard } from '@/components/StatCard';
+import { StatusSummary } from '@/components/StatusSummary';
+import { StepCard } from '@/components/StepCard';
+import { StepsList } from '@/components/StepsList';
+import { SuccessFeedback } from '@/components/SuccessFeedback';
 import { Stepper } from '@/components/Stepper';
 import { Switch } from '@/components/Switch';
 import { Tabs } from '@/components/Tabs';
@@ -44,6 +65,10 @@ import { Tag } from '@/components/Tag';
 import { TextField } from '@/components/TextField';
 import { Toast } from '@/components/Toast';
 import { Tooltip } from '@/components/Tooltip';
+import { TrackingBadge } from '@/components/TrackingBadge';
+import { TrackingCard } from '@/components/TrackingCard';
+import { TrackingSearch } from '@/components/TrackingSearch';
+import { ValueCard } from '@/components/ValueCard';
 import './App.css';
 
 export function App() {
@@ -268,6 +293,60 @@ export function App() {
             { label: 'Ven', value: 145 },
           ]}
         />
+      </section>
+
+      <section>
+        <h2>Core</h2>
+        <div className="row">
+          <CoreButton>Se connecter</CoreButton>
+          <CoreButton variant="secondary">Créer un compte</CoreButton>
+          <CoreButton variant="icon">Voir sur la carte</CoreButton>
+          <CoreButton variant="compact">Ouvert maintenant</CoreButton>
+        </div>
+        <div className="row">
+          <CoreField placeholder="vous@email.fr" />
+          <CoreField type="password" placeholder="Mot de passe" />
+          <CoreSelect
+            options={[
+              { value: 'abidjan', label: 'Abidjan' },
+              { value: 'bouake', label: 'Bouaké' },
+            ]}
+          />
+        </div>
+        <CoreTabs />
+        <div className="row">
+          <FilterPill active>Ouvert maintenant</FilterPill>
+          <FilterPill>24h/24</FilterPill>
+        </div>
+        <QuestionSearch />
+        <PhotoUpload />
+        <div className="row">
+          <TrackingCard />
+          <RelayResultCard />
+          <FeatureCard />
+          <StepCard />
+          <LocationCard />
+          <ActionCard />
+          <ValueCard />
+          <BenefitsCard />
+        </div>
+        <ResetPasswordCard />
+        <div className="row">
+          <ProcessBadge />
+          <ProcessBadge state="success" />
+          <ProcessBadge state="error" />
+          <TrackingBadge />
+        </div>
+        <StatusSummary />
+        <TrackingSearch />
+        <InfoRow />
+        <StepsList />
+        <FaqItem />
+        <SuccessFeedback />
+        <div className="row">
+          <OutcomeModal />
+          <OutcomeModal type="error" />
+        </div>
       </section>
 
       <Footer />

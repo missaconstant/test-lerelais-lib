@@ -1,0 +1,35 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 632px;
+  margin: 0;
+  padding: 16px 18px;
+  list-style: none;
+  border-radius: 16px;
+  background: #f9fafc;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #191d26;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.list span {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: #d34860;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+}

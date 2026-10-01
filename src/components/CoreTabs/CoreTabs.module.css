@@ -1,0 +1,41 @@
+.tabs {
+  display: flex;
+  gap: 24px;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 124px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #606978;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.bar {
+  height: 3px;
+  border-radius: 2px;
+  background: transparent;
+}
+
+.active .label {
+  color: #d34860;
+  font-weight: 700;
+}
+
+.active .bar {
+  background: #d34860;
+}
