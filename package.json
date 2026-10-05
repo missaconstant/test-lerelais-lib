@@ -1,6 +1,5 @@
 {
-  "name": "@lerelais/library",
-  "private": true,
+  "name": "lerelais-front-library",
   "version": "0.1.0",
   "type": "module",
   "scripts": {
